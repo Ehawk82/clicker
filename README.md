@@ -26,6 +26,7 @@ ____
 ## Program Outline {#outline}
 
 * Seabee gameplay TBD
+* Free gameplay +ads
 
 [Back to top](#title)
 ____
