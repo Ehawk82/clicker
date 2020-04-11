@@ -1,0 +1,31 @@
+/* DOM */
+
+html,body {
+	margin: 0;
+	padding: 0;
+	overflow-y: hidden;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: -webkit-fill-available;
+
+}
+
+/* CLASS */
+
+.container {
+	display: -webkit-box;
+	height: 96vh;
+	box-shadow: 0 0 2px inset black;
+}
+
+/* ID */
+
+
+
+/* MULTI'S */
+header,footer {
+	background-color: silver;
+}
