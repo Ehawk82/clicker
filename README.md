@@ -3,9 +3,9 @@ I saw a pretty neat clicker game, i intend to mirror the concept, but rewrite th
 
 #
 ____
-**Clicker for Now**
+**Seabee Themed Game**
 ____
-**A basic clicker game with end-game scenario** 
+**A basic clicker game with end-game scenario**
 ____
 **"table of contents"**
 
@@ -25,7 +25,7 @@ ____
 
 ## Program Outline {#outline}
 
-* Clicker game
+* Seabee gameplay TBD
 
 [Back to top](#title)
 ____
@@ -42,7 +42,7 @@ ____
 
 ## Development
 
-* Ehawk will implement code to game theme specifics
+* Ehawk LLC will implement code to game theme specifics
 
 [Back to top](#title)
 ____
@@ -65,7 +65,7 @@ ____
 - [ ] Basic startup and user clock
 - [ ] JSON for objects
 - [ ] Database for object definitions
-- [x] Source group(s) for data-mining
+- [ ] Source group(s) for data-mining
 
     ### Progress
     ![Progress](https://progress-bar.dev/20/)
@@ -93,7 +93,7 @@ ____
 * Clear User Data
 * Color themes(?): Dark/Light
 * FullScreen/Window'd
-* Cheats/Admin shortcuts 
+* Cheats/Admin bypass 
 
 [Back to top](#title)
 ____
@@ -107,7 +107,9 @@ ____
 
 ## Other
 
-* Can Do
+* Can Do!
+* Contracts TBD
+* Proceeds to be donated toward a Can Do cause TBD.
 
 [Back to top](#)
 ____
