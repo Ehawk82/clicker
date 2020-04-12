@@ -5,27 +5,49 @@ html,body {
 	padding: 0;
 	overflow-y: hidden;
 }
-
+header span {
+	margin: 1vw;
+}
 footer {
 	position: absolute;
 	bottom: 0;
 	width: -webkit-fill-available;
 
 }
-
+button {
+	outline: none;
+	border: none;
+	background-color: transparent;
+}
 /* CLASS */
 
 .container {
 	display: -webkit-box;
 	height: 96vh;
-	box-shadow: 0 0 2px inset black;
 }
 
+.tools {
+	margin: 0;
+	padding: 0;
+}
+.holders {
+	text-align: center;
+	height: -webkit-fill-available;
+}
+.holders:nth-child(1),.holders:nth-child(3) {
+	width:10vw;
+	border-left:1px solid black;
+	border-right:1px solid black;
+}
+.holders:nth-child(2) {
+  	width:79.7vw;
+}
 /* ID */
 
 
 
 /* MULTI'S */
 header,footer {
-	background-color: silver;
+	background-color: white;
+	border:1px solid black;
 }
