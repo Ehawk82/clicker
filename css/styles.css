@@ -3,44 +3,95 @@
 html,body {
 	margin: 0;
 	padding: 0;
-	overflow-y: hidden;
+	overflow: hidden;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: bolder;
+}
+header {
+	border-bottom:1px solid black;
+	padding: 5px 0;
 }
 header span {
 	margin: 1vw;
+	cursor: default;
+}
+header button {
+	margin: 0 1vw;
+	padding: 0 1vw;
 }
 footer {
 	position: absolute;
+	display: block;
 	bottom: 0;
-	width: -webkit-fill-available;
-
+	left:10.1vw;
+	width: 79.9vw;
+	text-align: center;
+	border-top:1px solid black;
+	cursor: default;
+}
+footer div {
+	display: inline-block;
+    width: 20vw;
+    margin: 0 auto;
+    cursor: pointer;
 }
 button {
 	outline: none;
 	border: none;
 	background-color: transparent;
+	opacity: 1;
+	cursor: pointer;
+}
+button:active {
+	opacity: 0.6;
 }
 /* CLASS */
 
 .container {
-	display: -webkit-box;
-	height: 96vh;
+	display: -webkit-inline-box;
+	height: 100vh;
 }
 
 .tools {
-	margin: 0;
-	padding: 0;
+
 }
 .holders {
 	text-align: center;
-	height: -webkit-fill-available;
+	display: flex;
+	height: inherit;
 }
 .holders:nth-child(1),.holders:nth-child(3) {
 	width:10vw;
-	border-left:1px solid black;
-	border-right:1px solid black;
+	background-image: url("../assets/cement.jpg");
+	background-size: auto 100%;
+	
 }
 .holders:nth-child(2) {
-  	width:79.7vw;
+  	width:79.9vw;
+  	border-left:1px solid black;
+	border-right:1px solid black;
+	background-image: url("../assets/sand.jpg");
+}
+.blokker {
+	position: fixed;
+	top:0;
+	left:0;
+	height: 100vh;
+	width: 100vw;
+	background-image: url("../assets/cement.jpg");
+	background-size: auto 100% ;
+	border: 1px solid black;
+}
+.xOut {
+	float: right;
+	font-size: 2vw;
+}
+.frame {
+	background-color: white;
+	border: 1px solid black;
+	width:50vw;
+	margin: 25vh 25vw;
+	height: 50vh;
 }
 /* ID */
 
@@ -48,6 +99,6 @@ button {
 
 /* MULTI'S */
 header,footer {
-	background-color: white;
-	border:1px solid black;
+	background-color:white;
+	line-height: 25px;
 }
