@@ -1,1 +1,1 @@
-var basic = ["$","*","Level: "]; 
+var basic = ["$","*","Level: "];

@@ -102,3 +102,11 @@ header,footer {
 	background-color:white;
 	line-height: 25px;
 }
+
+@media only screen and (orientation: portrait) {
+	.frame {
+		width: 90vw;
+		height: 80vh;
+		margin:5vh 5vw;
+	}
+}
