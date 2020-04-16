@@ -7,18 +7,22 @@ html,body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: bolder;
 }
+
 header {
 	border-bottom:1px solid black;
 	padding: 5px 0;
 }
+
 header span {
 	margin: 1vw;
 	cursor: default;
 }
+
 header button {
 	margin: 0 1vw;
 	padding: 0 1vw;
 }
+
 footer {
 	position: absolute;
 	display: block;
@@ -29,12 +33,14 @@ footer {
 	border-top:1px solid black;
 	cursor: default;
 }
+
 footer div {
 	display: inline-block;
     width: 20vw;
     margin: 0 auto;
     cursor: pointer;
 }
+
 button {
 	outline: none;
 	border: none;
@@ -42,9 +48,11 @@ button {
 	opacity: 1;
 	cursor: pointer;
 }
+
 button:active {
 	opacity: 0.6;
 }
+
 /* CLASS */
 
 .container {
@@ -55,23 +63,27 @@ button:active {
 .tools {
 
 }
+
 .holders {
 	text-align: center;
 	display: flex;
 	height: inherit;
 }
+
 .holders:nth-child(1),.holders:nth-child(3) {
 	width:10vw;
 	background-image: url("../assets/cement.jpg");
 	background-size: auto 100%;
 	
 }
+
 .holders:nth-child(2) {
   	width:79.9vw;
   	border-left:1px solid black;
 	border-right:1px solid black;
 	background-image: url("../assets/sand.jpg");
 }
+
 .blokker {
 	position: fixed;
 	top:0;
@@ -82,10 +94,12 @@ button:active {
 	background-size: auto 100% ;
 	border: 1px solid black;
 }
+
 .xOut {
 	float: right;
 	font-size: 2vw;
 }
+
 .frame {
 	background-color: white;
 	border: 1px solid black;
@@ -93,11 +107,27 @@ button:active {
 	margin: 25vh 25vw;
 	height: 50vh;
 }
+
+.title {
+	width: -webkit-fill-available;
+    display: inline-flex;
+    line-height: auto;
+    background-color: lightgrey;
+    border-bottom: 1px solid grey;
+    text-indent: .5vw;
+}
+
+.upperbar {
+	background-color: yellow;
+	height:29vh; 
+}
+
 /* ID */
 
 
 
 /* MULTI'S */
+
 header,footer {
 	background-color:white;
 	line-height: 25px;
@@ -108,5 +138,9 @@ header,footer {
 		width: 90vw;
 		height: 80vh;
 		margin:5vh 5vw;
+	}
+	
+	.title {
+		width: 90vw;
 	}
 }

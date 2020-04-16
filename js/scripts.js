@@ -68,9 +68,17 @@ var myUI = {
 		return function(){
 			var blokker = createEle("div"),
 				xOut = createEle("button"),
-				frame = createEle("div");
+				frame = createEle("div"),
+				title = createEle("label"),
+				upperbar = createEle("div");
 
-			frame.innerHTML = x.innerHTML;
+			upperbar.innerHTML = "&nbsp;";
+			upperbar.className = "upperbar";
+
+			title.innerHTML = x.innerHTML;
+			title.className = "title";
+
+			frame.append(title,upperbar);
 			frame.className = "frame";
 
 			xOut.innerHTML = "❌";
