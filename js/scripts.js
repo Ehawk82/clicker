@@ -9,8 +9,6 @@ var myUI = {
 		container.className = "container";
 		container.onload = myUI.loadout(header,container,footer);
 
-		//footer.innerHTML = "EHAWK &copy; 2020";
-
 		body.append(header,container,footer);
 	},
 	loadout: function(header,container,footer){
