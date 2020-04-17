@@ -70,15 +70,19 @@ var myUI = {
 				xOut = createEle("button"),
 				frame = createEle("div"),
 				title = createEle("label"),
-				upperbar = createEle("div");
+				upperbar = createEle("div"),
+				lowerbar = createEle("div");
 
-			upperbar.innerHTML = "&nbsp;";
+			upperbar.innerHTML = "1<br />2";
 			upperbar.className = "upperbar";
+
+			lowerbar.innerHTML = "3<br />4";
+			lowerbar.className = "lowerbar";
 
 			title.innerHTML = x.innerHTML;
 			title.className = "title";
 
-			frame.append(title,upperbar);
+			frame.append(title,upperbar, lowerbar);
 			frame.className = "frame";
 
 			xOut.innerHTML = "❌";

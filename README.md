@@ -27,6 +27,12 @@ ____
 
 * Seabee gameplay TBD
 * Free gameplay +ads
+* 1 tic/per sec
+* Program appears to run when offline
+* Endgame scenario - multi
+* SCW Pin - Realistic testing
+* Hosted domain meant for Chrome, Edge, Safari, and Opera
+* 
 
 [Back to top](#title)
 ____

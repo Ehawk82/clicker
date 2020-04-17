@@ -111,17 +111,20 @@ button:active {
 .title {
 	width: -webkit-fill-available;
     display: inline-flex;
-    line-height: auto;
+    line-height: 4vh;
     background-color: lightgrey;
     border-bottom: 1px solid grey;
     text-indent: .5vw;
 }
 
 .upperbar {
-	background-color: yellow;
-	height:29vh; 
+	line-height:11.45vh;
+	height: 22.9vh;
 }
-
+.lowerbar {
+	line-height:11.4vh;
+	height: 22.9vh;
+}
 /* ID */
 
 
@@ -142,5 +145,13 @@ header,footer {
 	
 	.title {
 		width: 90vw;
+	}
+	.upperbar {
+		line-height:11.45vh;
+		height: 48vh;
+	}
+	.lowerbar {
+		line-height:11.4vh;
+		height: 48vh;
 	}
 }
