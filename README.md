@@ -62,7 +62,7 @@ ____
 - [x] gScript2020 library
 - [ ] End-game discussion
 - [ ] Discussion Board/Page on FB
-- [ ] Research games' theme
+- [x] Research games' theme (Seabee theme)
 - [ ] Basic startup and user clock
 - [ ] JSON for objects
 - [ ] Database for object definitions
