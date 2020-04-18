@@ -4,14 +4,22 @@ var myUI = {
 			container = createEle("div")
 			footer = createEle("footer");
 
+		var uData = parseLS("uData");
+		
+		if(!uData){
+			saveLS("uData",udata);
+		}else{
+			uData = parseLS("uData");
+		}
+
 		header.innerHTML = "<span>SEABEE CLICKER</span>";
 
 		container.className = "container";
-		container.onload = myUI.loadout(header,container,footer);
+		container.onload = myUI.loadout(header,container,footer,uData);
 
 		body.append(header,container,footer);
 	},
-	loadout: function(header,container,footer){
+	loadout: function(header,container,footer,uData){
 		var tools = createEle("button"),
 		    achievements = createEle("button"),
 		    stats = createEle("button"),
@@ -42,23 +50,34 @@ var myUI = {
 		}
 		funds.innerHTML = "FUNDS";
 		funds.setAttribute("data-index", 0);		
-		funds.onmouseover = myUI.pophover(funds);
+		funds.onmouseover = myUI.pophover(funds, uData);
 
 		readiness.innerHTML = "READINESS";
 		readiness.setAttribute("data-index", 1);
-		readiness.onmouseover = myUI.pophover(readiness);
+		readiness.onmouseover = myUI.pophover(readiness, uData);
 
 		skills.innerHTML = "SKILLS";
 		skills.setAttribute("data-index", 2);
-		skills.onmouseover = myUI.pophover(skills);
+		skills.onmouseover = myUI.pophover(skills, uData);
 
 		footer.append(funds,readiness,skills);
 	},
-	pophover: function(x){
+	pophover: function(x, uData){
 		return function(){
 			var thing = x.innerHTML,
-				dindex = x.getAttribute('data-index');
-			x.innerHTML = basic[dindex];
+				dindex = x.getAttribute('data-index'),uValue;
+
+			if(dindex === "0"){
+				uValue = basic[dindex] + uData.money;
+
+			}
+			if (dindex === "1") {
+				uValue = uData.ready + basic[dindex];
+			}
+			if(dindex === "2"){
+				uValue = basic[dindex] + uData.level;
+			}
+			x.innerHTML = uValue;
 			x.onmouseout = function(){ return x.innerHTML = thing }
 		};
 	},
