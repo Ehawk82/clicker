@@ -29,14 +29,17 @@ var myUI = {
 
 		tools.innerHTML = "⚙️";
 		tools.className = "tools";
+		tools.setAttribute('data-index',0);
 		tools.onclick = myUI.popup(tools);
 
 		achievements.innerHTML = "🏆";
 		achievements.className = "achievements";
+		achievements.setAttribute('data-index',1);
 		achievements.onclick = myUI.popup(achievements);
 
 		stats.innerHTML = "📈";
 		stats.className = "stats";
+		stats.setAttribute('data-index',2);
 		stats.onclick = myUI.popup(stats);
 
 		header.append(tools,achievements,stats);
@@ -83,6 +86,7 @@ var myUI = {
 	},
 	popup: function(x){
 		return function(){
+			var xIndex = x.getAttribute('data-index');
 			var blokker = createEle("div"),
 				xOut = createEle("button"),
 				frame = createEle("div"),
@@ -92,7 +96,7 @@ var myUI = {
 
 			upperbar.innerHTML = "1<br />2";
 			upperbar.className = "upperbar";
-
+console.log(xIndex);
 			lowerbar.innerHTML = "3<br />4";
 			lowerbar.className = "lowerbar";
 
