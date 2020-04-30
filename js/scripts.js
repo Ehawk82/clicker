@@ -8,7 +8,7 @@ var myUI = {
 		
 		if(!uData){
 			saveLS("uData",udata);
-		}else{
+		} else {
 			uData = parseLS("uData");
 		}
 
@@ -51,6 +51,7 @@ var myUI = {
 
 			container.append(holders);
 		}
+
 		funds.innerHTML = "FUNDS";
 		funds.setAttribute("data-index", 0);		
 		funds.onmouseover = myUI.pophover(funds, uData);
@@ -72,7 +73,6 @@ var myUI = {
 
 			if(dindex === "0"){
 				uValue = basic[dindex] + uData.money;
-
 			}
 			if (dindex === "1") {
 				uValue = uData.ready + basic[dindex];
@@ -94,10 +94,10 @@ var myUI = {
 				upperbar = createEle("div"),
 				lowerbar = createEle("div");
 
-			upperbar.innerHTML = "1<br />2";
+			upperbar.innerHTML = tabChoke[xIndex][0];
 			upperbar.className = "upperbar";
-console.log(xIndex);
-			lowerbar.innerHTML = "3<br />4";
+
+			lowerbar.innerHTML = tabChoke[xIndex][1];
 			lowerbar.className = "lowerbar";
 
 			title.innerHTML = x.innerHTML;

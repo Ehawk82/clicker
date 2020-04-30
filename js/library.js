@@ -19,3 +19,9 @@ var udata = {
 	lastLogout: "",
 	dta: ""
 };
+
+var tabChoke = [
+	["sett1<br />sett2","sett3<br/>sett4"],
+	["chieve1<br />chieve2","chieve3<br/>chieve4"],
+	["stats1<br />stats2","stats3<br/>stats4"]
+]

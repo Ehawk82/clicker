@@ -53,7 +53,7 @@ button:active {
 	opacity: 0.6;
 }
 ::selection {
-  background: rgba(0,0,0,0); /* WebKit/Blink Browsers */
+  	background: rgba(0,0,0,0);
 }
 /* CLASS */
 
