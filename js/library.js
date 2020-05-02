@@ -1,4 +1,4 @@
-var basic = ["$","%","Level: "];
+var basic = ["💵","%","Level: "];
 
 var udata = {
 	money: 100,
