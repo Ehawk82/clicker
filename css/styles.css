@@ -120,12 +120,10 @@ button:active {
 }
 
 .upperbar {
-	line-height:11vh;
-	height: 22vh;
+	
 }
 .lowerbar {
-	line-height:11vh;
-	height: 22vh;
+
 }
 /* ID */
 
@@ -137,7 +135,11 @@ header,footer {
 	background-color:white;
 	line-height: 25px;
 }
-
+.upperbar, .lowerbar {
+	line-height:11vh;
+	height: 22vh;
+	text-indent: 10px;
+}
 @media only screen and (orientation: portrait) {
 	.frame {
 		width: 90vw;

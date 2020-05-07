@@ -1,4 +1,6 @@
-var basic = ["💵","%","Level: "];
+var uData = parseLS("uData");
+
+var basic = ["💵","%","⭐"];
 
 var udata = {
 	money: 100,
@@ -22,6 +24,8 @@ var udata = {
 
 var tabChoke = [
 	["sett1<br />sett2","sett3<br/>sett4"],
-	["chieve1<br />chieve2","chieve3<br/>chieve4"],
+	["Acheivements: "+ uData.cheives +"<hr />","cheives holder"],
 	["stats1<br />stats2","stats3<br/>stats4"]
 ]
+
+
